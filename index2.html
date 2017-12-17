@@ -59,7 +59,7 @@ data.push(dataSeries);
 
   </script>
   <script src="../../canvasjs.min.js"></script>
-  <title>Coinbase Analytics</title>
+  <title>CryptoAnalyzer</title>
 
   <script src="angular.min.js"></script>
   <script src="angular/jacobsChart2.js"></script>
@@ -73,7 +73,7 @@ data.push(dataSeries);
 </style> -->
 
 
-<title>Coinbase Analytics</title>
+<title>CryptoAnalyzer</title>
 
 <link href="./main.550dcf66.css" rel="stylesheet"></head>
 
@@ -94,7 +94,7 @@ data.push(dataSeries);
         </button>
         <a class="navbar-brand" href="./index.html" title="">
           <img src="./assets/images/mashup-icon.svg" class="navbar-logo-img" alt="">
-          Coinbase Analytics
+          CryptoAnalyzer
         </a>
       </div>
 
@@ -122,11 +122,14 @@ data.push(dataSeries);
 <!--<div ng-controller="myCtrl">
     <id="getRequest"> {{ getRequest }}
 </div>-->
-<span "> <!--glyphicon glyphicon-arrow-down when decrease-->
+ <!--glyphicon glyphicon-arrow-down when decrease-->
                 <!--{myWelcome}
                 <div ng-controller="myApp">-->
+
+
  <h1 style="margin: 0px"><body ng-controller="ctrl1" style="color: white" >
-        {{ '$' + BTCPrice }}
+        {{ '$' + BTCPrice + 1004.5 }}
+
                 <br>
           <!--<div ng-app="myApp" ng-controller="myCtrl"> 
           <p>Today's welcome message is:</p>
@@ -136,13 +139,31 @@ data.push(dataSeries);
          <!--class="col-12 col-md-8 col-lg-6 currencyChangeOnDay"-->   
       <h3><span style="color:#32CD32"> 
       <!--glyphicon glyphicon-arrow-down when decrease-->
-      {{ '+$' + ((BTCPrice - 4312.46)).toFixed(2) }}
+      
+          {{ 
+            '+$' + ((BTCPrice + 4.50)).toFixed() + ' (0.45' + '%' + ')' +' this month' 
+          }}
+
+          <!-- + (((totalInvestedAmount.valueToday-7000.5)/totalInvestedAmount.valueToday)*100).toFixed(2) -->
+
+
+          <!--cost-->
+
+
+          <center>
+
             <span style="color:#32CD32"> <!--glyphicon glyphicon-arrow-down when decrease-->
-                {{ '(' + (((totalInvestedAmount.valueToday-7000.5)/totalInvestedAmount.valueToday)*100).toFixed(2) + '%' + ')'}}
-            </span>    
-            <medium style="color:#32CD32">this month </medium>
+                
+                {{ 
+                  
+                }}
+
+            </span>  
+
+            <!-- <medium style="color:#32CD32">this month </medium> -->
+
             </div> 
-          <br>
+
           <div id="chartContainer" style="height: 370px; width: 100%;"></div>
             <!--<div id="chartContainer" style="height: 400px; width: 100%;"></div>-->
 
@@ -165,7 +186,12 @@ data.push(dataSeries);
           <h3>Bitcoin</h3>
           
            <h2>{{ '$' + BTCPrice }}</h2>
-            <span ng-controller="ctrl1"> 1D Change: <span style="color:green;">{{ '+$' + (BTCPrice-122.78).toFixed(2) }}</span></span> 
+            <span ng-controller="ctrl1"> 1D Change: <span style="color:green;">{{ '+$' 
+
+
+            + '4.50'}}
+
+          <!-- (BTCPrice-122.78).toFixed(2) --> </span></span> 
 
             <!-- 
 
@@ -175,8 +201,8 @@ data.push(dataSeries);
 
 
 
-            <br ng-controller="ctrl1"> Value: {{ '$' + BTCPrice }}
-            <br>Cost: $4312.46
+            <br ng-controller="ctrl1"> Value: {{ '$' + BTCPrice+1004.50 }}
+            <br>Cost: {{ '$' + BTCPrice }}
             <br>1 BTC
             <br>100%
             <br><a target="_blank" href="https://www.reddit.com/r/Bitcoin/" title="" alight = "center">r/bitcoin</a>
@@ -628,6 +654,13 @@ data.push(dataSeries);
 </script>
 --> 
 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-nvd3-directives/0.0.7/angularjs-nvd3-directives.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

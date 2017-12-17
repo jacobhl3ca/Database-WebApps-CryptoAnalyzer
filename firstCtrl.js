@@ -5,7 +5,7 @@ var myApp = angular.module('myApp', []);
 myApp.controller('ctrl1', function totalInvestedAmount($scope, $http) {
     "use strict";
     $scope.totalInvestedAmount = {
-        "valueToday": "16500"
+        "valueToday": "19500"
         /* (price*amount of bitcoin owned)+(price*amount of etheruem owned)+(price*amount of litecoin owned)*/
     };
     $http.get("https://coinbase-analytics-api.appspot.com/pricing",{
