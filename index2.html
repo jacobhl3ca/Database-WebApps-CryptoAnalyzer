@@ -141,7 +141,7 @@ data.push(dataSeries);
       <!--glyphicon glyphicon-arrow-down when decrease-->
       
           {{ 
-            '+$' + ((BTCPrice + 4.50)).toFixed() + ' (0.45' + '%' + ')' +' this month' 
+            '+$' + ((BTCPrice + 4.50)).toFixed(2) + ' (0.45' + '%' + ')' +' this month' 
           }}
 
           <!-- + (((totalInvestedAmount.valueToday-7000.5)/totalInvestedAmount.valueToday)*100).toFixed(2) -->
@@ -202,9 +202,20 @@ data.push(dataSeries);
 
 
             <br ng-controller="ctrl1"> Value: {{ '$' + BTCPrice+1004.50 }}
-            <br>Cost: {{ '$' + BTCPrice }}
-            <br>1 BTC
-            <br>100%
+            <br>Cost:
+              <input type="text" name="lastname">
+            
+            <!-- Cost: {{ '$' + BTCPrice + 1000 }} -->
+            <!-- BTC: 0.05128205128  -->
+            
+            <br>
+
+            <form>
+              BTC:
+              <input type="text" name="BTCAmount">
+            </form>
+
+            Porfolio Percentage: 100%
             <br><a target="_blank" href="https://www.reddit.com/r/Bitcoin/" title="" alight = "center">r/bitcoin</a>
             <br><a target="_blank" href="https://news.google.com/news/search/section/q/bitcoin/bitcoin?hl=en&gl=US&ned=us" title="" alight = "center">Google News</a>
             
@@ -223,11 +234,25 @@ data.push(dataSeries);
         <div class="col-md-4" style="color:black;"><h3>&nbsp;&nbsp;Ethereum</h3>
         <h2>{{ '$' + ETHPrice }}</h2>
         
-             1D Change: <span style="color:red;">-$0.66</span> 
+             1D Change: <span style="color:red;">$0</span> 
             <br>Value: $0
-            <br>Cost: $0
+            <br>Cost:
+              <input type="text" name="lastname">
+            
+            <!-- Cost: {{ '$' + BTCPrice + 1000 }} -->
+            <!-- BTC: 0.05128205128  -->
+            
+            <br>
+
+            <form>
+              BTC:
+              <input type="text" name="BTCAmount">
+            </form>
+
+            Porfolio Percentage: 0%
+            <!-- <br>Cost: $0
             <br>0 ETH
-            <br>0%
+            <br>0% -->
             <br><a target="_blank" href="https://www.reddit.com/r/ethereum/" title="" alight = "center">r/ethereum</a>
             <br><a target="_blank" href="https://news.google.com/news/search/section/q/ethereum/ethereum?hl=en&gl=US&ned=us" title="" alight = "center">Google News</a>
             
@@ -244,11 +269,27 @@ data.push(dataSeries);
         <div class="col-md-4" style="color:black";><h3>Litecoin</h3>
         <h2>{{ '$' + LTCPrice }}</h2>
             
-            1D Change: <span style="color:green;">-$2.26</span>
+            1D Change: <span style="color:red;">-$0</span>
             <br>Value: $0
-            <br>Cost: $0
+
+            <br>Cost:
+              <input type="text" name="lastname">
+            
+            <!-- Cost: {{ '$' + BTCPrice + 1000 }} -->
+            <!-- BTC: 0.05128205128  -->
+            
+            <br>
+
+            <form>
+              BTC:
+              <input type="text" name="BTCAmount">
+            </form>
+
+            Porfolio Percentage: 0%
+
+            <!-- <br>Cost: $0
             <br>0 LTC
-            <br>0%
+            <br>0% -->
             <br><a target="_blank" href="https://www.reddit.com/r/litecoin/" title="" alight = "center">r/litecoin</a>
             <br><a target="_blank" href="https://news.google.com/news/search/section/q/litecoin/litecoin?hl=en&gl=US&ned=us" title="" alight = "center">Google News</a>
 
